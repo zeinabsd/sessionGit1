@@ -1,0 +1,14 @@
+let obj = {
+  a: 1,
+  b: null,
+  c: 2,
+  d: undefined
+};
+
+for (let key in obj) {
+  if (obj[key] === null || obj[key] === undefined) {
+    delete obj[key];
+  }
+}
+
+console.log(obj);
