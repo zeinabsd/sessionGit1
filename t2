@@ -1,0 +1,35 @@
+
+const orders = {
+    book: {
+        name: 'JavaScript Basics',
+        model: 'JS101',
+        price: 30,
+        count: 2
+    },
+    pen: {
+        name: 'Ballpoint Pen',
+        model: 'BP202',
+        price: 5,
+        count: 5
+    },
+    laptop: {
+        name: 'Gaming Laptop',
+        model: 'GL503',
+        price: 1000,
+        count: 1
+    }
+};
+
+
+for (let key in orders) {
+    orders[key].price += 10;
+}
+
+
+let t = 0;
+
+for (let key in orders) {
+    t += orders[key].price * orders[key].count;
+}
+
+console.log('مبلغ کل : ' + t + ' واحد');
