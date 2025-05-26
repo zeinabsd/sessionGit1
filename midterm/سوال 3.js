@@ -1,9 +1,8 @@
-function add(an) {
-  let sum = 0;
-  for (let i = 1; i <= namber; i++) {
-    sum += i;
-  }
-  return sum;
-}
-const namber = 10;
-console.log("مجموع اعداد 1 تا", namber , "=", add(n));
+const calculator = {
+    name: "math",
+    subtract: function (aa, bb) {
+        return aa - bb;},
+    sum: function (aa, b) {
+        return aa + bb;}}
+console.log(calculator.subtract(5, 3))
+console.log(calculator.sum(5, 3))
